@@ -4,7 +4,7 @@ namespace App\Pages;
 use App\Bitrix24\Contact;
 use App\Bitrix24\Deal;
 
-class ClickGC {
+class ClickMinisterio {
     public $crmId = null;
     public $result = null;
 
@@ -21,7 +21,7 @@ class ClickGC {
 
             $deal = new Deal( $this->crmId );
             $contato = new Contact( $deal->getContactId() );
-            $link_form_personalizado = $contato->getField("UF_CRM_1667760124");
+            $link_form_personalizado = $contato->getField("UF_CRM_1667875134");
 
             // PIPELINE: WELCOME
             // STAGE: Com interação nos clicks
