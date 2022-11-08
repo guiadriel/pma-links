@@ -24,7 +24,10 @@ class ClickGC {
             $contato = new Contact( $deal->getContactId() );
             $link_form_personalizado = $contato->getField("UF_CRM_1667760124");
 
-            MoveStage::handleAction($this->crmId, "C5:UC_17CMN6");
+            // PIPELINE: WELCOME
+            // STAGE: Com interação nos clicks
+            // DESATIAVDO POR ENQUANTO
+            // MoveStage::handleAction($this->crmId, "C5:UC_17CMN6");
 
             header("Location: {$link_form_personalizado}");
             exit;

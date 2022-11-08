@@ -15,7 +15,7 @@ class Deal {
         $this->crmId = $crmId;
         $this->client = new Client();
 
-        $urlGetDeal = "https://poiema.bitrix24.com.br/rest/1/vvl1hicqckkjoj42/crm.deal.get.json?ID={$this->crmId}";
+        $urlGetDeal = "https://poiema.bitrix24.com.br/rest/1/obg7i4wu2c6pycre/crm.deal.get.json?ID={$this->crmId}";
         $response = $this->client->request('GET', $urlGetDeal);
         $json_response = json_decode($response->getBody()->getContents(), true);
         $this->result = $json_response['result'];
