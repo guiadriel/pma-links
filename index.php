@@ -9,6 +9,7 @@ $pages = [
     "gc" => App\Pages\ClickGC::class,
     "gc_final" => App\Pages\ClickGCFinal::class,
     "mn" => App\Pages\ClickMinisterio::class,
+    "mn_final" => App\Pages\ClickMinisterioFinal::class,
     "yt" => null,
     "parar" => null,
     "live" => null,

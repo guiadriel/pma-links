@@ -5,7 +5,7 @@ use App\Bitrix24\Actions\MoveStage;
 use App\Bitrix24\Contact;
 use App\Bitrix24\Deal;
 
-class ClickGCFinal {
+class ClickMinisterioFinal {
     public $crmId = null;
     public $result = null;
 
@@ -24,11 +24,11 @@ class ClickGCFinal {
             $contato = new Contact( $deal->getContactId() );
             $name = $contato->getField("NAME");
 
-            // PIPELINE: WELCOME
-            // STAGE: Finalizado GC
-            MoveStage::handleAction($this->crmId, "C5:UC_PC4XPL");
+            // PIPELINE: Ministérios
+            // STAGE: FINALIZADO MINISTÉRIO
+            MoveStage::handleAction($this->crmId, "C3:UC_KHYW1U");
 
-            echo "O contato <strong>({$name})</strong> foi movido para a etapa de contatos para GC Finalizados. <br/> Agora você pode fechar esta janela.";
+            echo "O contato <strong>({$name})</strong> foi movido para a etapa de ministérios para [Contato de Ministérios Finalizados]. <br/> Agora você pode fechar esta janela.";
             exit;
 
         } catch ( \Exception $e ) {
