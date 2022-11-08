@@ -7,6 +7,7 @@ use App\Pages\ClickGC;
 // Tipos de páginas
 $pages = [
     "gc" => App\Pages\ClickGC::class,
+    "gc_final" => App\Pages\ClickGCFinal::class,
     "mn" => App\Pages\ClickMinisterio::class,
     "yt" => null,
     "parar" => null,
