@@ -12,6 +12,7 @@ $pages = [
     "mn_final" => App\Pages\ClickMinisterioFinal::class,
     "yt" => App\Pages\ClickYT::class,
     "yta" => App\Pages\ClickYT::class,
+    "apelo" => App\Pages\ClickApelo::class,
     "parar" => null,
     "live" => null,
     "sair" => null
